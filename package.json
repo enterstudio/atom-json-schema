@@ -10,7 +10,8 @@
   },
   "scripts": {
     "postinstall": "./node_modules/.bin/gulp npm-postinstall",
-    "prepublish": "./node_modules/.bin/gulp npm-prepublish"
+    "prepublish": "npm run snyk-protect; ./node_modules/.bin/gulp npm-prepublish",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.0.5",
@@ -32,7 +33,8 @@
     "semver": "^5.0.0",
     "through2": "^2.0.0",
     "tsd": "~0.6.1",
-    "typescript": "^1.5.0-beta"
+    "typescript": "^1.5.0-beta",
+    "snyk": "^1.189.0"
   },
   "consumedServices": {
     "status-bar": {
@@ -61,5 +63,6 @@
   },
   "package-dependencies": {
     "linter": ">=1.0.0"
-  }
+  },
+  "snyk": true
 }
