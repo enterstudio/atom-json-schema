@@ -15,7 +15,7 @@
   "dependencies": {
     "atom-space-pen-views": "^2.0.5",
     "bluebird": "^2.9.27",
-    "del": "^1.2.0",
+    "del": "^8.0.0",
     "fuzzaldrin": "^2.1.0",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.5",
